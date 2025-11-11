@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhay A Mulgund | Mechanical Engineering Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Use Inter as the default font */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* slate-900 */
+            color: #e2e8f0; /* slate-200 */
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #1e293b; }
+        ::-webkit-scrollbar-thumb { background: #38bdf8; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #0ea5e9; }
+
+        /* Hide slides by default */
+        .slide { display: none; }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- 
+      Header / Navigation 
+    -->
+    <header class="sticky top-0 z-50 w-full backdrop-blur-md bg-slate-900/70 border-b border-slate-700">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Name / Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-white">Abhay A Mulgund</a>
+                </div>
+                <!-- Navigation Links -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#about" class="text-slate-300 hover:bg-slate-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#education" class="text-slate-300 hover:bg-slate-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Education</a>
+                        <a href="#experience" class="text-slate-300 hover:bg-slate-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Experience</a>
+                        <a href="#skills" class="text-slate-300 hover:bg-slate-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Skills</a>
+                        <a href="#projects" class="text-slate-300 hover:bg-slate-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                        <a href="#honors" class="text-slate-300 hover:bg-slate-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Honors</a>
+                        <a href="#contact" class="bg-sky-500 text-white hover:bg-sky-600 px-4 py-2 rounded-md text-sm font-medium transition-colors">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 
+          Hero / About Section 
+        -->
+        <section id="about" class="min-h-[90vh] flex items-center py-24 sm:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-16 items-center">
+                    <!-- Text Content -->
+                    <div class="md:col-span-2">
+                        <h1 class="text-base font-semibold text-sky-400 tracking-wide uppercase">Hello, I'm</h1>
+                        <h2 class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-6xl">Abhay A Mulgund</h2>
+                        <h3 class="mt-4 text-2xl sm:text-3xl font-medium text-slate-300">Mechanical Engineer specialising in Design and Manufacturing</h3>
+                        <p class="mt-6 text-lg text-slate-400 leading-8">
+                            I am a passionate Mechanical Engineer, currently pursuing my Master's at Columbia University. My goal is to become a leader in bringing complex products from concept to reality. 
+                            I possess a strong foundation in design and manufacturing, backed by proven hands-on experience in the electric vehicle industry. My work has involved designing high-performance electric motorcycles at Orxa Energies and developing robust autonomous ground vehicles (UGV/MGV) for defence applications.
+                        </p>
+                        <div class="mt-10 flex items-center gap-x-6">
+                            <a href="#contact" class="rounded-md bg-sky-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-sky-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-500 transition-colors">Get in Touch</a>
+                            <a href="https://www.linkedin.com/in/abhaymulgund13" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold leading-6 text-slate-300 hover:text-sky-400 transition-colors">
+                                View LinkedIn
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline w-4 h-4 ml-1">
+                                    <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Profile Picture -->
+                    <div class="md:col-span-1 flex justify-center md:justify-end">
+                        <div class="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden ring-4 ring-slate-700 ring-offset-4 ring-offset-slate-900 shadow-xl">
+                            <!-- ADD 'profile-photo.png' to your assets/img folder -->
+                            <img class="w-full h-full object-cover" src="assets/img/profile-photo.png" alt="Abhay A Mulgund"
+                                onerror="this.src='https://placehold.co/400x400/334155/e2e8f0?text=Abhay+Mulgund'; this.onerror=null;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 
+          Education Section 
+        -->
+        <section id="education" class="py-24 sm:py-32 bg-slate-800/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mb-12">
+                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Education</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- MS Degree -->
+                    <div class="bg-slate-800 p-6 rounded-lg ring-1 ring-slate-700 flex flex-col sm:flex-row items-center gap-6">
+                        <div class="flex-shrink-0">
+                            <!-- Add 'columbia-logo.png' to your assets/img folder -->
+                            <img class="h-40 w-40 rounded-full bg-white p-3 object-contain flex-shrink-0" src="assets/img/columbia-logo.png" alt="Columbia University Logo"
+                                onerror="this.src='https://placehold.co/160x160/ffffff/334155?text=CU'; this.onerror=null;">
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-sky-400">Aug 2024 - May 2026 (Expected)</p>
+                            <h3 class="text-xl font-semibold text-white mt-2">Columbia University, New York</h3>
+                            <p class="text-slate-300 mt-1">Master of Science in Mechanical Engineering</p>
+                            <p class="text-slate-400 mt-1 text-sm">GPA: 3.71/4.0</p>
+                        </div>
+                    </div>
+                    
+                    <!-- BE Degree -->
+                    <div class="bg-slate-800 p-6 rounded-lg ring-1 ring-slate-700 flex flex-col sm:flex-row items-center gap-6">
+                        <div class="flex-shrink-0">
+                             <!-- Add 'ramaiah-logo.png' to your assets/img folder -->
+                            <img class="h-40 w-40 rounded-full bg-white p-3 object-contain flex-shrink-0" src="assets/img/ramaiah-logo.png" alt="MS Ramaiah Institute of Technology Logo"
+                                onerror="this.src='https://placehold.co/160x160/ffffff/334155?text=MSRIT'; this.onerror=null;">
+                        </div>
+                        <div>
+                            <p class="text-sm font-semibold text-sky-400">2016 - 2020</p>
+                            <h3 class="text-xl font-semibold text-white mt-2">MS Ramaiah Institute of Technology</h3>
+                            <p class="text-slate-300 mt-1">Bachelor of Engineering in Mechanical Engineering (First Class with Distinction)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+          Experience Section 
+        -->
+        <section id="experience" class="py-24 sm:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mb-12">
+                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Career Experience</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Experience Card 1: Orxa -->
+                    <div class="bg-slate-800 p-8 rounded-lg ring-1 ring-slate-700 md:col-span-2 shadow-xl">
+                        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                            
+                            <!-- Left Column: Slideshow -->
+                            <div class="lg:col-span-1">
+                                <div class="slideshow-container relative w-full h-80 rounded-lg overflow-hidden" data-slideshow-id="orxa-slideshow">
+                                    <div class="slide"><img src="assets/img/orxa1.png" alt="Orxa Energies 1" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Orxa+Energies'; this.onerror=null;"></div>
+                                    <div class="slide"><img src="assets/img/orxa2.png" alt="Orxa Energies 2" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Orxa+Energies'; this.onerror=null;"></div>
+                                    <div class="slide"><img src="assets/img/orxa3.png" alt="Orxa Energies 3" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Orxa+Energies'; this.onerror=null;"></div>
+                                    <div class="slide"><img src="assets/img/orxa4.png" alt="Orxa Energies 4" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Orxa+Energies'; this.onerror=null;"></div>
+                                    <div class="slide"><img src="assets/img/orxa5.png" alt="Orxa Energies 5" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Orxa+Energies'; this.onerror=null;"></div>
+                                    <a class="prev absolute top-1/2 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></span>
+                                    </a>
+                                    <a class="next absolute top-1/2 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- Right Column: Text Details -->
+                            <div class="lg:col-span-2">
+                                <p class="text-sm font-semibold text-sky-400">Jan 2021 - May 2024 (3 yrs 5 mos)</p>
+                                <h3 class="text-2xl font-semibold text-white mt-2">Senior Mechanical Engineer</h3>
+                                <p class="text-slate-300 mt-1">Orxa Energies Private Limited, Bangalore, India</p>
+                                
+                                <div class="mt-6 border-t border-slate-700 pt-6 space-y-6">
+                                    <div>
+                                        <h4 class="font-semibold text-sky-400 mb-2">Product Line: High-Performance Electric Motorcycle</h4>
+                                        <ul class="list-disc pl-5 text-slate-400 space-y-1 text-sm">
+                                            <li>Engineered structural components, performing <span class="font-bold">FEA & bearing load calculations</span> to achieve a <span class="font-bold">2.2 kg weight reduction</span>.</li>
+                                            <li>Finalized production-ready drawings with <span class="font-bold">GD&T</span> for precise manufacturing standards.</li>
+                                            <li>Optimized component design, reducing assembly time by <span class="font-bold">2 hours per unit</span>.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="border-t border-slate-700 pt-6">
+                                        <h4 class="font-semibold text-sky-400 mb-2">Product Line: Autonomous UGV (for L&T Defence)</h4>
+                                        <ul class="list-disc pl-5 text-slate-400 space-y-1 text-sm">
+                                            <li>Designed and developed the chassis, suspension, and battery enclosures in <span class="font-bold">Fusion 360</span>, optimizing for weight distribution and <span class="font-bold">IP65 compliance</span>.</li>
+                                            <li>Engineered precision sensor mounts for high-value sensor packages, consistently achieving <span class="font-bold">&lt;0.1° alignment accuracy</span>.</li>
+                                        </ul>
+                                    </div>
+                                    <div class="border-t border-slate-700 pt-6">
+                                        <h4 class="font-semibold text-sky-400 mb-2">Product Line: Manned MGV (for L&T Defence)</h4>
+                                        <ul class="list-disc pl-5 text-slate-400 space-y-1 text-sm">
+                                            <li>Designed and optimized the top structural component, ensuring full compliance with high load-bearing and occupant safety standards.</li>
+                                            <li>Utilized advanced design principles (<span class="font-bold">Topology Optimization, FEA</span>) to manage weight while maintaining structural integrity.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Experience Card 2: Eco Drives -->
+                    <div class="bg-slate-800 p-8 rounded-lg ring-1 ring-slate-700 shadow-xl">
+                        <p class="text-sm font-semibold text-sky-400">Sept 2020 - Dec 2020 (4 mos)</p>
+                        <h3 class="text-2xl font-semibold text-white mt-2">Mechanical Design Engineer</h3>
+                        <p class="text-slate-300 mt-1">Eco Drives Intelligent Motor Vehicle, Bangalore, India</p>
+                        <ul class="list-disc pl-5 mt-4 text-slate-400 space-y-2 text-sm">
+                            <li>Executed comprehensive system architecture development and DVP&R (50+ tests).</li>
+                            <li>Created and managed $50+ part assemblies and test plan timelines using MS Project.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Experience Card 3: Tata Hitachi -->
+                    <div class="bg-slate-800 p-8 rounded-lg ring-1 ring-slate-700 shadow-xl">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <p class="text-sm font-semibold text-sky-400">May 2018 - Aug 2018 (4 mos)</p>
+                                <h3 class="text-2xl font-semibold text-white mt-2">Mechanical Engineer Intern</h3>
+                                <p class="text-slate-300 mt-1">Tata Hitachi Construction Machinery</p>
+                            </div>
+                            <img src="assets/img/tata1.jpg" alt="Tata Hitachi" class="w-16 h-16 rounded-lg object-contain bg-white p-1 flex-shrink-0"
+                                onerror="this.src='https://placehold.co/100x100/ffffff/334155?text=Tata'; this.onerror=null;">
+                        </div>
+                        <ul class="list-disc pl-5 mt-4 text-slate-400 space-y-2 text-sm">
+                            <li>Assisted in **failure analysis** of hydraulic systems and boom assemblies, contributing to a documented <span class="font-bold">5% reduction</span> in premature component failures.</li>
+                            <li>Conducted full dimensional QC checks.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+          Skills Section 
+        -->
+        <section id="skills" class="py-24 sm:py-32 bg-slate-800/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mb-12">
+                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Technical Skills</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Design Tools -->
+                    <div class="bg-slate-800 p-6 rounded-lg ring-1 ring-slate-700">
+                        <h3 class="text-xl font-semibold text-white mb-4">Design Tools</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-700 text-sky-300 text-sm font-medium px-3 py-1 rounded-full">SolidWorks</span>
+                            <span class="bg-slate-700 text-sky-300 text-sm font-medium px-3 py-1 rounded-full">Autodesk Fusion 360</span>
+                            <span class="bg-slate-700 text-sky-300 text-sm font-medium px-3 py-1 rounded-full">Siemens NX</span>
+                            <span class="bg-slate-700 text-sky-300 text-sm font-medium px-3 py-1 rounded-full">GD&T</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Simulation Tools -->
+                    <div class="bg-slate-800 p-6 rounded-lg ring-1 ring-slate-700">
+                        <h3 class="text-xl font-semibold text-white mb-4">Simulation Tools</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-700 text-teal-300 text-sm font-medium px-3 py-1 rounded-full">Ansys (FEA, CFD)</span>
+                            <span class="bg-slate-700 text-teal-300 text-sm font-medium px-3 py-1 rounded-full">Comsol Multiphysics</span>
+                            <span class="bg-slate-700 text-teal-300 text-sm font-medium px-3 py-1 rounded-full">Topology Optimization</span>
+                            <span class="bg-slate-700 text-teal-300 text-sm font-medium px-3 py-1 rounded-full">FE Modeling</span>
+                        </div>
+                    </div>
+
+                    <!-- Manufacturing Tools -->
+                    <div class="bg-slate-800 p-6 rounded-lg ring-1 ring-slate-700">
+                        <h3 class="text-xl font-semibold text-white mb-4">Manufacturing Tools</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-700 text-green-300 text-sm font-medium px-3 py-1 rounded-full">CNC Machining</span>
+                            <span class="bg-slate-700 text-green-300 text-sm font-medium px-3 py-1 rounded-full">Metal 3D Printing</span>
+                            <span class="bg-slate-700 text-green-300 text-sm font-medium px-3 py-1 rounded-full">Injection Molding</span>
+                            <span class="bg-slate-700 text-green-300 text-sm font-medium px-3 py-1 rounded-full">Casting</span>
+                            <span class="bg-slate-700 text-green-300 text-sm font-medium px-3 py-1 rounded-full">Laser Cutting</span>
+                        </div>
+                    </div>
+
+                    <!-- Programming & CAM -->
+                    <div class="bg-slate-800 p-6 rounded-lg ring-1 ring-slate-700">
+                        <h3 class="text-xl font-semibold text-white mb-4">Programming & CAM</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="bg-slate-700 text-indigo-300 text-sm font-medium px-3 py-1 rounded-full">Matlab & Simulink</span>
+                            <span class="bg-slate-700 text-indigo-300 text-sm font-medium px-3 py-1 rounded-full">Mastercam</span>
+                            <span class="bg-slate-700 text-indigo-300 text-sm font-medium px-3 py-1 rounded-full">Python (Basic)</span>
+                            <span class="bg-slate-700 text-indigo-300 text-sm font-medium px-3 py-1 rounded-full">Microcontroller (Basic)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+          Projects Section 
+        -->
+        <section id="projects" class="py-24 sm:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mb-12">
+                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Featured Projects</h2>
+                    <p class="mt-4 text-lg text-slate-400">
+                        A selection of academic and professional projects. Use the arrows to see more photos.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+                    
+                    <!-- Project Card: Vortex Navigator -->
+                    <div class="flex flex-col bg-slate-800 rounded-lg shadow-xl overflow-hidden ring-1 ring-slate-700 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-sky-500/20">
+                        <div class="slideshow-container relative w-full h-64" data-slideshow-id="vortex-slideshow">
+                            <div class="slide"><img src="assets/img/vortex1.png" alt="Vortex Navigator 1" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Vortex+Navigator'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/vortex2.png" alt="Vortex Navigator 2" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Vortex+Navigator'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/vortex3.png" alt="Vortex Navigator 3" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Vortex+Navigator'; this.onerror=null;"></div>
+                            <a class="prev absolute top-1/2 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></span>
+                            </a>
+                            <a class="next absolute top-1/2 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span>
+                            </a>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-white">Vortex Navigator Autonomous Platform</h3>
+                            <p class="text-sm text-sky-400 mt-1">Creative Machines Lab, Columbia University</p>
+                            <ul class="mt-4 text-slate-400 space-y-2 text-sm flex-grow">
+                                <li>• Designing an innovative three-wheeled autonomous robot for outdoor leaf cleaning.</li>
+                                <li>• Integrating a dual-motor drive system and a novel radial inlet-axial outlet impeller for enhanced cleaning efficiency.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card: FlowSure -->
+                    <div class="flex flex-col bg-slate-800 rounded-lg shadow-xl overflow-hidden ring-1 ring-slate-700 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-sky-500/20">
+                        <div class="slideshow-container relative w-full h-64" data-slideshow-id="flowsure-slideshow">
+                            <!-- ROBUST FALLBACK: Tries .png, then .jpg -->
+                            <div class="slide"><img src="assets/img/insulin1.png" alt="FlowSure 1" class="absolute block w-full h-full object-contain bg-slate-900" 
+                                onerror="this.src='assets/img/insulin1.jpg'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/insulin2.png" alt="FlowSure 2" class="absolute block w-full h-full object-contain bg-slate-900" 
+                                onerror="this.src='assets/img/insulin2.jpg'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/insulin3.png" alt="FlowSure 3" class="absolute block w-full h-full object-contain bg-slate-900" 
+                                onerror="this.src='assets/img/insulin3.jpg'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/insulin4.png" alt="FlowSure 4" class="absolute block w-full h-full object-contain bg-slate-900" 
+                                onerror="this.src='assets/img/insulin4.jpg'; this.onerror=null;"></div>
+                            <a class="prev absolute top-1/2 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></span>
+                            </a>
+                            <a class="next absolute top-1/2 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span>
+                            </a>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-white">The FlowSure System (On-Body Drug Delivery)</h3>
+                            <p class="text-sm text-sky-400 mt-1">Columbia University</p>
+                            <ul class="mt-4 text-slate-400 space-y-2 text-sm flex-grow">
+                                <li>• Designed a modular on-body drug delivery system (OBDS) for large-volume (5-25mL) chronic care infusions.</li>
+                                <li>• Featured a reusable hub and disposable, pre-filled cartridge to reduce e-waste and improve patient independence.</li>
+                                <li>• System features a novel cantilever insertion mechanism and a spring-driven roller for safe, simple delivery.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project Card: MEMS Microphone -->
+                    <div class="flex flex-col bg-slate-800 rounded-lg shadow-xl overflow-hidden ring-1 ring-slate-700 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-sky-500/20">
+                        <div class="slideshow-container relative w-full h-64" data-slideshow-id="mems-slideshow">
+                            <div class="slide"><img src="assets/img/microphone1.png" alt="MEMS 1" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=MEMS+CAD'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/microphone2.png" alt="MEMS 2" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=MEMS+Membrane'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/microphone3.png" alt="MEMS 3" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=MEMS+Analysis'; this.onerror=null;"></div>
+                            <a class="prev absolute top-1/2 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></span>
+                            </a>
+                            <a class="next absolute top-1/2 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span>
+                            </a>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-white">MEMS Capacitive Microphone</h3>
+                            <p class="text-sm text-sky-400 mt-1">Columbia University</p>
+                            <ul class="mt-4 text-slate-400 space-y-2 text-sm flex-grow">
+                                <li>• Led design optimization using <span class="font-bold">COMSOL Multiphysics and FEA</span>.</li>
+                                <li>• Achieved a <span class="font-bold">40% reduction in mechanical stress</span> and enhanced frequency response (20 Hz–20 kHz) through parametric analysis.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card: Air Purifier -->
+                    <div class="flex flex-col bg-slate-800 rounded-lg shadow-xl overflow-hidden ring-1 ring-slate-700 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-sky-500/20">
+                        <div class="slideshow-container relative w-full h-64" data-slideshow-id="purifier-slideshow">
+                            <div class="slide"><img src="assets/img/airpurifier1.png" alt="Air Purifier 1" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Air+Purifier+CAD'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/airpurifier2.png" alt="Air Purifier 2" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Air+Purifier+Cutsection'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/airpurifier3.png" alt="Air Purifier 3" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Disassembled+Purifier'; this.onerror=null;"></div>
+                            <a class="prev absolute top-1/2 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></span>
+                            </a>
+                            <a class="next absolute top-1/2 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span>
+                            </a>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-white">Sustainable Air Purifier Redesign</h3>
+                            <p class="text-sm text-sky-400 mt-1">Columbia University</p>
+                            <ul class="mt-4 text-slate-400 space-y-2 text-sm flex-grow">
+                                <li>• Cut part count by <span class="font-bold">28%</span> and reduced non-recyclable content from 63% to <span class="font-bold">12%</span>.</li>
+                                <li>• Applied <span class="font-bold">Design for Disassembly (DfD)</span> and replaced plastics with biodegradable PHA and cork.</li>
+                                <li>• Achieved a <span class="font-bold">48% improvement in environmental performance (LCA)</span>.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project Card: PULSE -->
+                    <div class="flex flex-col bg-slate-800 rounded-lg shadow-xl overflow-hidden ring-1 ring-slate-700 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-sky-500/20">
+                        <div class="slideshow-container relative w-full h-64" data-slideshow-id="pulse-slideshow">
+                            <div class="slide"><img src="assets/img/pulse.png" alt="PULSE 1" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=PULSE+Device'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/pulse.png" alt="PULSE 2" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=PULSE+Device'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/pulse.png" alt="PULSE 3" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=PULSE+Device'; this.onerror=null;"></div>
+                            <a class="prev absolute top-1/2 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></span>
+                            </a>
+                            <a class="next absolute top-1/2 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span>
+                            </a>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-white">Biomedical Device Design - PULSE</h3>
+                            <p class="text-sm text-sky-400 mt-1">Columbia University</p>
+                            <ul class="mt-4 text-slate-400 space-y-2 text-sm flex-grow">
+                                <li>• Developing improved patient intake and assessment systems to reduce delays that negatively impact hospital efficiency and patient outcomes.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project Card: Quad Robot -->
+                    <div class="flex flex-col bg-slate-800 rounded-lg shadow-xl overflow-hidden ring-1 ring-slate-700 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-sky-500/20">
+                        <div class="slideshow-container relative w-full h-64" data-slideshow-id="robot-slideshow">
+                            <div class="slide"><img src="assets/img/robot.png" alt="Quad Robot 1" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Quadruped+Robot'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/robot.png" alt="Quad Robot 2" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Quadruped+Robot'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/robot.png" alt="Quad Robot 3" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Quadruped+Robot'; this.onerror=null;"></div>
+                            <a class="prev absolute top-1/2 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></span>
+                            </a>
+                            <a class="next absolute top-1/2 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span>
+                            </a>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-white">Quadrupedal Robot Design</h3>
+                            <p class="text-sm text-sky-400 mt-1">Columbia University</p>
+                            <ul class="mt-4 text-slate-400 space-y-2 text-sm flex-grow">
+                                <li>• Designed a lightweight acrylic and 3D-printed frame with a custom actuation system of 8 high-torque servos.</li>
+                                <li>• Achieved <span class="font-bold">+/- 1° motion accuracy</span> and <span class="font-bold">95% stability</span> on uneven terrain via optimized gait mechanics.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project Card: NACA Aerofoil -->
+                    <div class="flex flex-col bg-slate-800 rounded-lg shadow-xl overflow-hidden ring-1 ring-slate-700 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-sky-500/20">
+                        <div class="slideshow-container relative w-full h-64" data-slideshow-id="naca-slideshow">
+                            <div class="slide"><img src="assets/img/naca1.png" alt="NACA 1" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=NACA+Aerofoil+CAD'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/naca2.png" alt="NACA 2" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=NACA+Aerofoil+Tool'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/naca3.png" alt="NACA 3" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=NACA+Aerofoil+CAD'; this.onerror=null;"></div>
+                            <a class="prev absolute top-1/2 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></span>
+                            </a>
+                            <a class="next absolute top-1/2 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span>
+                            </a>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-white">Manufacturing System for NACA Aerofoil</h3>
+                            <p class="text-sm text-sky-400 mt-1">Columbia University</p>
+                            <ul class="mt-4 text-slate-400 space-y-2 text-sm flex-grow">
+                                <li>• Designed a manufacturing system for a two-part assembly (Titanium base, 3D-printed top) to cast a modified NACA0012H Aerofoil.</li>
+                                <li>• The final aerofoil is intended for use in a vertical axis wind turbine.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card: Industry Research Lab -->
+                    <div class="flex flex-col bg-slate-800 rounded-lg shadow-xl overflow-hidden ring-1 ring-slate-700 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-sky-500/20">
+                        <div class="slideshow-container relative w-full h-64" data-slideshow-id="hcd-slideshow">
+                            <!-- ROBUST FALLBACK: Tries .png, then .jpg -->
+                            <div class="slide"><img src="assets/img/human1.png" alt="IRL 1" class="absolute block w-full h-full object-contain bg-slate-900" 
+                                onerror="this.src='assets/img/human1.jpg'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/human2.png" alt="IRL 2" class="absolute block w-full h-full object-contain bg-slate-900" 
+                                onerror="this.src='assets/img/human2.jpg'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/human3.png" alt="IRL 3" class="absolute block w-full h-full object-contain bg-slate-900" 
+                                onerror="this.src='assets/img/human3.jpg'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/human4.png" alt="IRL 4" class="absolute block w-full h-full object-contain bg-slate-900" 
+                                onerror="this.src='assets/img/human4.jpg'; this.onerror=null;"></div>
+                            <a class="prev absolute top-1/2 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></span>
+                            </a>
+                            <a class="next absolute top-1/2 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span>
+                            </a>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-white">Human Centered Design - Industry Research Lab</h3>
+                            <p class="text-sm text-sky-400 mt-1">Columbia University</p>
+                            <ul class="mt-4 text-slate-400 space-y-2 text-sm flex-grow">
+                                <li>• A lab designed to bridge the gap between academia and industry by bringing real industry challenges into the classroom.</li>
+                                <li>• Worked on live projects from companies (e.g., Ford) and received feedback from professional engineers.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project Card: Carbon Management -->
+                    <div class="flex flex-col bg-slate-800 rounded-lg shadow-xl overflow-hidden ring-1 ring-slate-700 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-sky-500/20">
+                        <div class="slideshow-container relative w-full h-64" data-slideshow-id="carbon-slideshow">
+                            <div class="slide"><img src="assets/img/carbon1.png" alt="Carbon 1" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=CO2+Capture+Process'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/carbon2.png" alt="Carbon 2" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=CO2+Emissions+Breakdown'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/carbon3.png" alt="Carbon 3" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Net+Emissions+Impact'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/carbon4.png" alt="Carbon 4" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Operating+Expenses'; this.onerror=null;"></div>
+                            <a class="prev absolute top-1/2 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></span>
+                            </a>
+                            <a class="next absolute top-1/2 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span>
+                            </a>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-white">Carbon Management: CO₂ Capture System</h3>
+                            <p class="text-sm text-sky-400 mt-1">Columbia University</p>
+                            <ul class="mt-4 text-slate-400 space-y-2 text-sm flex-grow">
+                                <li>• Assessed a Point Source Capture (PSC) system for CO₂ emissions from a cement factory using Monoethanolamine (MEA).</li>
+                                <li>• Analyzed scenarios for <span class="font-bold">Waste Heat Recovery (63.6% reduction)</span> and <span class="font-bold">Renewable Energy (96.9% reduction)</span> in net emissions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card: AuraLife (World Bank) -->
+                    <div class="flex flex-col bg-slate-800 rounded-lg shadow-xl overflow-hidden ring-1 ring-slate-700 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-sky-500/20">
+                        <div class="slideshow-container relative w-full h-64" data-slideshow-id="auralife-slideshow">
+                            <div class="slide"><img src="assets/img/ambu1 (1).jpg" alt="AuraLife 1" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=AuraLife+Ventilator'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/ambu1 (2).jpg" alt="AuraLife 2" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=AuraLife+Circuit'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/ambu1 (3).jpg" alt="AuraLife 3" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=AuraLife+Prototype'; this.onerror=null;"></div>
+                            <a class="prev absolute top-1/2 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></span>
+                            </a>
+                            <a class="next absolute top-1/2 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span>
+                            </a>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-white">AuraLife Critical Care Compression System</h3>
+                            <p class="text-sm text-sky-400 mt-1">World Bank (TEQIP) Sponsored Project</p>
+                            <ul class="mt-4 text-slate-400 space-y-2 text-sm flex-grow">
+                                <li>• Led design of a portable electro-mechanical ventilator to combat the COVID-19 crisis.</li>
+                                <li>• Featured a NEMA motor-driven AMBU bag compression system with integrated pitot tube sensors and closed-loop control.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project Card: Formula Student -->
+                    <div class="flex flex-col bg-slate-800 rounded-lg shadow-xl overflow-hidden ring-1 ring-slate-700 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-sky-500/20">
+                        <div class="slideshow-container relative w-full h-64" data-slideshow-id="fsae-slideshow">
+                            <div class="slide"><img src="assets/img/vrf1.jpg" alt="FSAE 1" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=FSAE+Car'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/vrf2.jpg" alt="FSAE 2" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=FSAE+CAD'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/vrf3.jpg" alt="FSAE 3" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=FSAE+Team'; this.onerror=null;"></div>
+                            <a class="prev absolute top-1/2 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></span>
+                            </a>
+                            <a class="next absolute top-1/2 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span>
+                            </a>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-white">Formula Student (FSAE) Lead</h3>
+                            <p class="text-sm text-sky-400 mt-1">MSRIT</p>
+                            <ul class="mt-4 text-slate-400 space-y-2 text-sm flex-grow">
+                                <li>• Optimized chassis via <span class="font-bold">ANSYS FEA</span>, increasing torsional rigidity from 2,800 to <span class="font-bold">3,220 N-m/degree</span>.</li>
+                                <li>• Secured <span class="font-bold">27th place overall</span> out of 69 participating teams at Kari Motor Speedway.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Project Card: Rally Car -->
+                    <div class="flex flex-col bg-slate-800 rounded-lg shadow-xl overflow-hidden ring-1 ring-slate-700 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-sky-500/20">
+                        <div class="slideshow-container relative w-full h-64" data-slideshow-id="rally-slideshow">
+                            <div class="slide"><img src="assets/img/rallycar.png" alt="Rally Car 1" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Rally+Car'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/rallycar.png" alt="Rally Car 2" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Rally+Car'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/rallycar.png" alt="Rally Car 3" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Rally+Car'; this.onerror=null;"></div>
+                            <a class="prev absolute top-1/2 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></span>
+                            </a>
+                            <a class="next absolute top-1/2 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span>
+                            </a>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-white">4x4 Two-Seater Rally Car Lead</h3>
+                            <p class="text-sm text-sky-400 mt-1">MSRIT</p>
+                            <ul class="mt-4 text-slate-400 space-y-2 text-sm flex-grow">
+                                <li>• Engineered a <span class="font-bold">4x4 drivetrain</span> with an 800CC engine, achieving 250 N·m peak torque and a sub-10 second 0-60 mph time.</li>
+                                <li>• Designed a double-ladder chassis with a <span class="font-bold">15% increase in torsional stiffness</span>.</li>
+                                <li>• Secured <span class="font-bold">12th place overall</span> out of 35 participating teams.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project Card: Solar Glider -->
+                    <div class="flex flex-col bg-slate-800 rounded-lg shadow-xl overflow-hidden ring-1 ring-slate-700 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-sky-500/20">
+                        <div class="slideshow-container relative w-full h-64" data-slideshow-id="glider-slideshow">
+                            <!-- Updated slides to include all user-provided images with fallbacks -->
+                            <div class="slide"><img src="assets/img/glider1.png" alt="Glider 1 - Full CAD" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='assets/img/glider1.png'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/glider2.jpg" alt="Glider 2 - Prototype" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='assets/img/glider2.jpg'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/glider3.png" alt="Glider 3 - Fuselage CAD" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='assets/img/glider3.png'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/glider4.png" alt="Glider 4 - Wing CAD" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='assets/img/glider4.png'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/glider5.png" alt="Glider 5 - Vertical Stabilizer CAD" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='assets/img/glider5.png'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/glider6.png" alt="Glider 6 - Horizontal Stabilizer CAD" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='assets/img/glider6.png'; this.onerror=null;"></div>
+                            <a class="prev absolute top-1/2 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></span>
+                            </a>
+                            <a class="next absolute top-1/2 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span>
+                            </a>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-white">Autonomous Solar Glider</h3>
+                            <p class="text-sm text-sky-400 mt-1">MSRIT (Award-Winning)</p>
+                            <ul class="mt-4 text-slate-400 space-y-2 text-sm flex-grow">
+                                <li>• Won <span class="font-bold">"Best Project of the Year"</span> from Dept. of Science & Technology & received KSCST/ICREATE grants.</li>
+                                <li>• Led design, aerodynamic analysis (Xfoil), and <span class="font-bold">3D printing</span> of a 4-meter wingspan glider.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project Card: Edhitha -->
+                    <div class="flex flex-col bg-slate-800 rounded-lg shadow-xl overflow-hidden ring-1 ring-slate-700 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-sky-500/20">
+                        <div class="slideshow-container relative w-full h-64" data-slideshow-id="edhitha-slideshow">
+                            <div class="slide"><img src="assets/img/edhitha1.png" alt="Edhitha 1" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Edhitha+UAV'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/edhitha2.png" alt="Edhitha 2" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Structural+Enhancement'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/edhitha3.png" alt="Edhitha 3" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=Wing+Load+Test'; this.onerror=null;"></div>
+                            <a class="prev absolute top-1/2 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></span>
+                            </a>
+                            <a class="next absolute top-1/2 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span>
+                            </a>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-white">UAV Structural Enhancements (Edhitha)</h3>
+                            <p class="text-sm text-sky-400 mt-1">MSRIT</p>
+                            <ul class="mt-4 text-slate-400 space-y-2 text-sm flex-grow">
+                                <li>• Led team effort to enhance Air-titan structural integrity, resulting in a <span class="font-bold">40% increase in payload capacity</span>.</li>
+                                <li>• Reinforced fuselage and wings with carbon fibre, reducing wing flexure by <span class="font-bold">25%</span>.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project Card: CFD Simulation -->
+                    <div class="flex flex-col bg-slate-800 rounded-lg shadow-xl overflow-hidden ring-1 ring-slate-700 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-sky-500/20">
+                        <div class="slideshow-container relative w-full h-64" data-slideshow-id="cfd-slideshow">
+                            <div class="slide"><img src="assets/img/cfd1.png" alt="CFD 1" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=CFD+Pressure+vs+Mach'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/cfd2.png" alt="CFD 2" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=CFD+Density+vs+Mach'; this.onerror=null;"></div>
+                            <div class="slide"><img src="assets/img/cfd3.png" alt="CFD 3" class="absolute block w-full h-full object-contain bg-slate-900" onerror="this.src='https://placehold.co/600x400/334155/e2e8f0?text=CFD+Temp+vs+Mach'; this.onerror=null;"></div>
+                            <a class="prev absolute top-1/2 left-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg></span>
+                            </a>
+                            <a class="next absolute top-1/2 right-0 z-10 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none -translate-y-1/2">
+                                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-black/40 group-hover:bg-black/60 transition-colors"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></span>
+                            </a>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-white">Supersonic CFD Flow Simulation</h3>
+                            <p class="text-sm text-sky-400 mt-1">MSRIT</p>
+                            <ul class="mt-4 text-slate-400 space-y-2 text-sm flex-grow">
+                                <li>• Conducted external flow analysis on a space re-entry capsule at various Mach speeds and angles of attack.</li>
+                                <li>• Studied detached bow shockwave characteristics, velocity, pressure, density, and temperature profiles.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+          NEW: Publications, Awards & Service Section
+        -->
+        <section id="honors" class="py-24 sm:py-32 bg-slate-800/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mb-12">
+                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Publications, Awards & Service</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Column 1: Publications & Presentations -->
+                    <div class="lg:col-span-2 space-y-8">
+                        <!-- Research Papers -->
+                        <div class="bg-slate-800 p-8 rounded-lg ring-1 ring-slate-700 shadow-xl">
+                            <h3 class="text-2xl font-semibold text-white mb-4">Research Papers</h3>
+                            <ul class="list-disc pl-5 text-slate-400 space-y-3">
+                                <li>
+                                    <strong class="text-slate-200 block">"CFD Investigation of Space Re-entry Vehicle"</strong>
+                                    Published in the "Journal of Analysis and Computation," a peer-reviewed UGC journal, ISSN: 0973-2861, Volume XIII, Issue IV, April 2020.
+                                </li>
+                                <li>
+                                    <strong class="text-slate-200 block">"Design and Development of An Autonomous Unmanned Solar Powered Glider"</strong>
+                                    Published in the KSCST Technical Compendium (2019-2020). Supported by Dept. of Science and Technology, Govt. of Karnataka & Govt. of India.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Presentations -->
+                        <div class="bg-slate-800 p-8 rounded-lg ring-1 ring-slate-700 shadow-xl">
+                            <h3 class="text-2xl font-semibold text-white mb-4">Paper & Poster Presentations</h3>
+                            <ul class="list-disc pl-5 text-slate-400 space-y-3">
+                                <li><strong class="text-slate-200">“Structural Health Monitoring”</strong> - 3rd Intl. Conference on Fatigue Durability and Fracture Mechanics, V.T. University, 2019.</li>
+                                <li><strong class="text-slate-200">“Supersonic Flow CFD Simulations of a Space Re-entry Capsule”</strong> - Pradarshana, MSRIT, 2019.</li>
+                                <li><strong class="text-slate-200">“Industry 4.0”</strong> - V.T. University, 2018.</li>
+                                <li><strong class="text-slate-200">“Edhitha Unmanned Aerial Vehicle”</strong> - Bangalore Tech Summit 2018, organized by the Govt. of Karnataka.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Awards & Volunteering -->
+                    <div class="lg:col-span-1 space-y-8">
+                        <!-- Awards -->
+                        <div class="bg-slate-800 p-8 rounded-lg ring-1 ring-slate-700 shadow-xl">
+                            <h3 class="text-2xl font-semibold text-white mb-4">Awards & Honors</h3>
+                            <ul class="list-disc pl-5 text-slate-400 space-y-3">
+                                <li><strong class="text-slate-200 block">Best Project of the Year Award</strong> - KSCST, Govt. of India.</li>
+                                <li><strong class="text-slate-200 block">Spark-Up Idea Challenge Winner</strong> - ICREATE.</li>
+                                <li><strong class="text-slate-200 block">Research Grant</strong> - World Bank (TEQIP) for "Mechanical Resuscitator Pressing Ventilator".</li>
+                                <li><strong class="text-slate-200 block">Research Grant</strong> - KSCST for "Autonomous Unmanned Solar Powered Glider".</li>
+                                <li><strong class="text-slate-200 block">12th Place Overall</strong> (35 teams) - Rally Car Design Challenge.</li>
+                                <li><strong class="text-slate-200 block">27th Place Overall</strong> (69 teams) - Formula Bharat.</li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Volunteering -->
+                        <div class="bg-slate-800 p-8 rounded-lg ring-1 ring-slate-700 shadow-xl">
+                            <h3 class="text-2xl font-semibold text-white mb-4">Social Service</h3>
+                            <ul class="list-disc pl-5 text-slate-400 space-y-3">
+                                <li>
+                                    <strong class="text-slate-200 block">Volunteer, BHUMI (NGO)</strong>
+                                    Contributed to educating underprivileged children in science subjects at local schools.
+                                </li>
+                                <li>
+                                    <strong class="text-slate-200 block">Volunteer, Society of Mechanical Engineers (S.M.E)</strong>
+                                    Actively organized seminars and social initiatives.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+          Contact Section 
+        -->
+        <section id="contact" class="py-24 sm:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center mb-12">
+                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Get in Touch</h2>
+                    <p class="mt-4 text-lg text-slate-400">
+                        I'm actively seeking new opportunities and collaborations. Please feel free to reach out—let's connect.
+                    </p>
+                </div>
+                
+                <div class="max-w-2xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Email -->
+                    <a href="mailto:aam2365@columbia.edu" class="bg-slate-800 p-8 rounded-lg ring-1 ring-slate-700 text-center transition-all duration-300 hover:ring-sky-400 hover:-translate-y-1">
+                        <div class="flex justify-center mb-4">
+                            <div class="bg-slate-700 p-4 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-8 h-8 text-sky-400"><path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.161V6a2 2 0 00-2-2H3z" /><path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" /></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white">Email Me</h3>
+                        <p class="text-slate-400 mt-1 text-sm">aam2365@columbia.edu</p>
+                    </a>
+                    
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/abhaymulgund13" target="_blank" rel="noopener noreferrer" class="bg-slate-800 p-8 rounded-lg ring-1 ring-slate-700 text-center transition-all duration-300 hover:ring-sky-400 hover:-translate-y-1">
+                        <div class="flex justify-center mb-4">
+                            <div class="bg-slate-700 p-4 rounded-full">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-sky-400" fill="currentColor" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.817 0 1.339-.57 1.339-1.287h-.01c-.05-1.028-.82-1.138-1.33-1.138-.51 0-1.308.11-1.308 1.138 0 .717.491 1.287 1.309 1.287zm7.54-1.2h-2.39v.961c-.458-.8-1.2-1.348-2.262-1.348-1.528 0-2.722 1.29-2.722 2.92v3.318h2.39v-3.106c0-.792.15-1.564.88-1.564.73 0 1.014.59 1.014 1.51v3.16h2.39v-3.558c.001-2.077-1.11-3.166-2.6-3.166z"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-semibold text-white">Connect on LinkedIn</h3>
+                        <p class="text-slate-400 mt-1 text-sm">/in/abhaymulgund13</p>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 
+      Footer 
+    -->
+    <footer id="footer" class="bg-slate-950/80 border-t border-slate-700">
+        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <p class="text-base text-slate-500">&copy; 2024 Abhay A Mulgund. All rights reserved.</p>
+            <a href="#" class="text-sm font-medium text-slate-400 hover:text-sky-400">
+                Back to Top &uarr;
+            </a>
+        </div>
+    </footer>
+
+    <!-- 
+      JavaScript for the Slideshows
+    -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Find all slideshow containers
+            const slideshows = document.querySelectorAll('.slideshow-container');
+
+            slideshows.forEach(slideshow => {
+                let slideIndex = 1;
+                const slides = slideshow.querySelectorAll('.slide');
+                const prevButton = slideshow.querySelector('.prev');
+                const nextButton = slideshow.querySelector('.next');
+
+                function showSlides(n) {
+                    if (n > slides.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = slides.length }
+                    
+                    // Hide all slides
+                    slides.forEach(slide => {
+                        slide.style.display = "none";
+                    });
+
+                    // Show the current slide
+                    if (slides.length > 0) {
+                        slides[slideIndex - 1].style.display = "block";
+                    }
+                }
+
+                // Initial display
+                showSlides(slideIndex);
+
+                // Button listeners
+                if (prevButton) {
+                    prevButton.addEventListener('click', () => {
+                        showSlides(slideIndex += -1);
+                    });
+                }
+                
+                if (nextButton) {
+                    nextButton.addEventListener('click', () => {
+                        showSlides(slideIndex += 1);
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
